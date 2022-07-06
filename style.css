@@ -45,7 +45,7 @@ button {
 }
 
 label {
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   display: inline-flex;
   flex-wrap: wrap;
   align-items: baseline;
@@ -53,12 +53,14 @@ label {
 }
 
 input {
+  cursor: text;
   padding: 10px;
   font-family: sans-serif;
   font-size: 1.5rem;
   border-radius: 10px;
   line-height: 1.6;
   display: block;
+  caret-color: magenta;
 
   width: 90%;
   height: 45px;
@@ -70,7 +72,8 @@ input:focus {
   background: rgb(240, 237, 237);
 }
 
-#username {
+#username,
+#email {
   width: 95%;
 }
 
@@ -84,15 +87,15 @@ label {
 }
 
 form {
+  width: 900px;
+  margin: 0 auto;
   border-radius: 15px;
-  padding: 40px;
+  padding: 50px;
   background: black;
-  border: 2px solid magenta;
 }
 
 .firstContainer,
 .lastContainer,
-.emailContainer,
 .phoneContainer,
 .pwdContainer,
 .pwd2Container {
@@ -101,7 +104,8 @@ form {
   margin-bottom: 40px;
 }
 
-.user {
+.user,
+#email {
   margin-bottom: 40px;
 }
 
@@ -110,6 +114,7 @@ form {
 }
 
 button {
+  cursor: pointer;
   border: 2px solid magenta;
   margin-top: 30px;
   background: black;
@@ -117,6 +122,7 @@ button {
   padding: 9px 18px;
   border-radius: 10px;
   font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 button:hover {
@@ -124,20 +130,50 @@ button:hover {
   color: black;
 }
 
-footer {
-  right: 0px;
-  left: 0px;
-  height: 10%;
-  min-width: 100%;
-  background-color: magenta;
-  position: fixed;
-  bottom: 0;
-}
-
 p {
   color: white;
 }
 
-span {
+a {
+  text-align: center;
+  font-family: sans-serif;
   color: magenta;
+}
+
+p {
+  font-family: sans-serif;
+}
+
+h1 {
+  color: magenta;
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 6rem;
+}
+
+p > a {
+  color: magenta;
+}
+
+.google {
+  cursor: pointer;
+  border-radius: 10px;
+  line-height: 50px;
+  color: rgb(78, 76, 76);
+  margin: 0 auto;
+  width: 60%;
+  height: 50px;
+  text-align: center;
+  background-color: rgb(235, 231, 231);
+  margin-bottom: 20px;
+}
+
+.google:hover {
+  background-color: magenta;
+  color: black;
+}
+
+svg {
+  margin-right: 15px;
+  overflow: visible;
 }
