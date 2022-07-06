@@ -20,14 +20,21 @@ body {
 }
 
 .left-main::after {
+  min-width: 100%;
+  height: 20%;
+  background-color: rgba(0, 0, 0, 0.5);
+
   color: white;
+  text-shadow: 10px 10px 20px rgb(141, 118, 141), 15px 15px 30px blue;
   font-weight: 600;
-  font-size: 4rem;
-  content: "Enough talk, let's get to work..";
+  font-size: 2rem;
+  content: "Connect with aspiring and current developers all around the world.";
+
   position: absolute;
-  top: 40%;
-  left: 55%;
-  transform: translate(-50%, -50%);
+  top: 65%;
+  left: 0%;
+  display: block;
+  text-align: center;
 }
 
 .right-main {
@@ -42,6 +49,7 @@ label,
 input,
 button {
   appearance: none;
+  -webkit-appearance: none;
 }
 
 label {
@@ -89,6 +97,8 @@ label {
 form {
   width: 900px;
   margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
   border-radius: 15px;
   padding: 50px;
   background: black;
@@ -101,7 +111,7 @@ form {
 .pwd2Container {
   width: 50%;
   float: left;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .user,
@@ -116,9 +126,11 @@ form {
 button {
   cursor: pointer;
   border: 2px solid magenta;
-  margin-top: 30px;
+
   background: black;
   color: magenta;
+  width: 35%;
+  height: 20%;
   padding: 9px 18px;
   border-radius: 10px;
   font-size: 1.5rem;
@@ -173,7 +185,81 @@ p > a {
   color: black;
 }
 
-svg {
+#google-icon {
   margin-right: 15px;
   overflow: visible;
+}
+
+.req {
+  font-family: sans-serif;
+  font-size: 0.9rem;
+}
+
+.req2 {
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  visibility: hidden;
+}
+
+.mainHead {
+  width: 100%;
+  position: absolute;
+  height: 35%;
+  top: 30%;
+  margin: 0;
+  padding: 0%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 10px 10px 20px rgb(141, 118, 141), 15px 15px 30px blue;
+}
+
+div > h1 {
+  margin: 0;
+}
+
+input:focus:invalid {
+  box-shadow: 0px 10px 20px red;
+  outline: 3px solid red;
+}
+
+input:focus:valid {
+  box-shadow: 0px 10px 20px green;
+  outline: 3px solid green;
+}
+
+.validMsg {
+  color: green;
+}
+
+.invalidMsg {
+  color: red;
+}
+
+#logo {
+  position: absolute;
+  width: 400px;
+  z-index: 2;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  left: 0;
+  right: 0;
+  animation: spin 4s linear infinite;
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.small-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
 }
