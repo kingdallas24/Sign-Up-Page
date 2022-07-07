@@ -10,7 +10,7 @@
   <body>
     <div class="left-main">
         <div class = "mainHead"><h1>TechGlobal</h1>
-            <svg id = "logo"width="200" height="200" viewBox="0 0 908 908" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg id = "logo"width="150" height="150" viewBox="0 0 908 908" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_4_29)">
                 <path d="M904 540V360L754.166 270L757.663 267.9V92.1L754.166 90L603.334 0V180L453.501 90L454.499 180V270L604.333 360L603.334 540L754.166 630L757.663 627.9V452.1L754.166 450L757.663 447.9V452.1L904 540Z" fill="#E9C4EA"/>
                 <path d="M304.666 360L304.666 540L453.501 630L453.501 540L454.499 450L304.666 360Z" fill="#E9C4EA"/>
@@ -48,7 +48,7 @@
 
         <form action="">
             <img class ="small-logo" src="./images/Vector.svg" alt="">
-            <h1 style ="margin-bottom: 20px;font-size: 2.5rem; text-align: center;">The possibilities are limitless</h1>
+            <h1 class = "quote" >The possibilities are limitless</h1>
             <p style = "text-align: center; margin-bottom: 50px; margin-top: 0px;">Already have an account?<a href="">  Login</a> </p>
             <div class="google">
                 
@@ -74,7 +74,7 @@
             <label for="email">Email</label><input type="email" name="" id="email" required/> </div>
           
          
-    <div class = "user">      <label for="username">Username &nbsp <span class ="req">(only letters, numbers, and underscores)</span></label><input type="text" name="" id="username" required /></div>
+    <div class = "user">      <label for="username">Username &nbsp <span class ="req">(only letters, numbers, and underscores)</span></label><input type="text" name="" id="username" required pattern="[\w].{2,}" /></div>
         
 
           <div class="pwdContainer">
