@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  overflow: visible;
 
   display: flex;
 }
@@ -33,7 +34,7 @@ html {
   text-shadow: 10px 10px 20px rgb(141, 118, 141), 15px 15px 30px blue;
   font-weight: 600;
   font-size: 2rem;
-  content: "Connect with aspiring and current developers all around the world.";
+  content: "";
 
   position: absolute;
   top: 65%;
@@ -167,7 +168,7 @@ h1 {
   color: magenta;
   text-align: center;
   margin-bottom: 100px;
-  font-size: 5rem;
+  font-size: calc(2rem + 3vw);
 }
 
 .quote {
@@ -282,4 +283,51 @@ input:focus:valid {
   position: absolute;
   bottom: 0px;
   left: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    display: block;
+    overflow: visible;
+    height: 100%;
+  }
+
+  .google {
+    width: 85%;
+  }
+
+  .left-main {
+    height: 50vh;
+  }
+
+  .right-main {
+    margin-top: 0;
+  }
+  #logo {
+    width: 80px;
+  }
+  .credit {
+    visibility: hidden;
+  }
+
+  .left-main::after {
+    height: 36%;
+  }
+
+  .mainHead {
+    top: 30%;
+  }
+
+  .small-logo {
+    display: none;
+  }
+
+  .req {
+    margin-bottom: 30px;
+  }
+
+  .mainHead > h1 {
+    position: relative;
+    top: 30px;
+  }
 }
