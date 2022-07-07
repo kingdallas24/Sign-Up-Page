@@ -263,3 +263,9 @@ input:focus:valid {
   margin-right: auto;
   width: 100px;
 }
+
+.credit {
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+}
