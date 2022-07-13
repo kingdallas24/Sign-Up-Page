@@ -36,7 +36,7 @@ html {
 
   background: url(./images/screen-post-rVcxGBT80j8-unsplash.jpg);
 
-  background-size: contain;
+  background-size: 100%;
   background-repeat: repeat;
   background-attachment: fixed;
   position: relative;
@@ -132,6 +132,11 @@ h1 {
   background-color: rgb(240, 231, 231);
 }
 
+.google:hover {
+  background: magenta;
+  color: black;
+}
+
 .google > span {
   margin-bottom: 2rem;
   margin-right: 0.2rem;
@@ -149,12 +154,14 @@ span > img {
 }
 
 input {
+  caret-color: magenta;
+  font-size: 1.5rem;
   margin: auto;
   display: block;
   width: clamp(250px, 80%, 90%);
   height: 2.5rem;
   border-radius: 1rem;
-  outline: none;
+  outline: magenta;
 }
 
 .form-container {
@@ -189,6 +196,11 @@ label {
   border: 3px solid magenta;
   color: magenta;
   background-color: black;
+}
+
+#join:hover {
+  background: magenta;
+  color: black;
 }
 
 footer {
@@ -244,12 +256,84 @@ p > span > a {
   margin-bottom: 1rem;
 }
 
-input:invalid {
+.invalid {
   border: 3px solid red;
 }
 
-input:valid {
+.valid {
   border: 3px solid green;
+}
+
+.userName-Error {
+  outline: 2px solid yellow;
+
+  text-align: left;
+  display: inline-block;
+  width: clamp(250px, 80%, 90%);
+
+  font-size: 1.2rem;
+}
+
+.error {
+  outline: 2px solid green;
+  color: green;
+}
+
+input {
+  padding-left: 2.5rem;
+  padding-right: 2.5;
+  text-align: left;
+  background-repeat: no-repeat;
+  background-position: center right 3%, center left 3%;
+  background-size: 1rem;
+}
+.name1-Container,
+.name2-Container,
+.username-Container,
+.email-Container,
+.pwd-Container,
+.pwd2-Container {
+  position: relative;
+}
+
+.valid-icon {
+  position: absolute;
+  top: 2.7rem;
+  right: 4.5rem;
+  opacity: 0;
+}
+
+.invalid-icon {
+  position: absolute;
+  top: 2.7rem;
+  right: 4.5rem;
+  opacity: 0;
+}
+
+#userName {
+  background-position: center left 3%;
+  background-image: url(./images/userIcon.svg);
+}
+
+#email {
+  background-position: center left 2%;
+  background-image: url(./images/email.svg);
+  background-size: 1.5rem;
+}
+
+.errorMsg {
+  color: red;
+  margin-top: 0.5rem;
+  text-align: left;
+  display: inline-block;
+  width: clamp(250px, 80%, 90%);
+}
+
+#pwd,
+#pwd2 {
+  background-position: center left 2%;
+  background-image: url(./images/lock.svg);
+  background-size: 1.2rem;
 }
 
 @media only screen and (min-width: 900px) {

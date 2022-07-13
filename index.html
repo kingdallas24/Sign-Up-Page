@@ -37,45 +37,87 @@
         </button>
         <span>Or</span>
         <div class="form-container">
-          <form novalidate action="">
-            <div>
+          <form id="sign-up" novalidate action="">
+            <div class="name1-Container">
               <label for="firstName">First name</label>
-              <input type="text" name="firstName" id="firstName" required />
+              <img class="valid-icon" src="./images/valid.svg" alt="" />
+              <img class="invalid-icon" src="./images/invalid.svg" alt="" />
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                required
+                placeholder="Enter first name"
+              />
+              <span class="errorMsg"></span>
             </div>
-            <div>
+
+            <div class="name2-Container">
               <label for="lasttName">Last name</label>
-              <input type="text" name="lastName" id="lastName" required />
+              <img class="valid-icon" src="./images/valid.svg" alt="" />
+              <img class="invalid-icon" src="./images/invalid.svg" alt="" />
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                required
+                placeholder="Enter last name"
+              />
+              <span class="errorMsg"></span>
             </div>
-            <div>
+            <div class="username-Container">
               <label for="userName">Username</label>
+              <img class="valid-icon" src="./images/valid.svg" alt="" />
+              <img class="invalid-icon" src="./images/invalid.svg" alt="" />
               <input
                 type="text"
                 name="userName"
                 id="userName"
                 pattern="[\w].{3,15}"
                 required
+                placeholder="Enter username"
               />
-              <span class="userName-msg"></span>
+              <span class="errorMsg"></span>
             </div>
-            <div>
+            <div class="email-Container">
               <label for="email">Email</label>
+              <img class="valid-icon" src="./images/valid.svg" alt="" />
+              <img class="invalid-icon" src="./images/invalid.svg" alt="" />
               <input
                 type="email"
                 name="email"
                 id="email"
                 minlength="8"
                 required
+                placeholder="abc123@gmail.com"
               />
-              <span class="error" aria-live="polite"></span>
+              <span class="errorMsg"></span>
             </div>
-            <div>
+            <div class="pwd-Container">
               <label for="pwd">Password</label>
-              <input type="password" name="Password" id="pwd" required />
+              <img class="valid-icon" src="./images/valid.svg" alt="" />
+              <img class="invalid-icon" src="./images/invalid.svg" alt="" />
+              <input
+                type="password"
+                name="Password"
+                id="pwd"
+                required
+                placeholder="Password"
+              />
+              <span class="errorMsg"></span>
             </div>
-            <div>
+            <div class="pwd2-Container">
               <label for="pwd2">Confirm password</label>
-              <input type="password" name="password2" id="pwd2" required />
-              <span id="message"></span>
+              <img class="valid-icon" src="./images/valid.svg" alt="" />
+              <img class="invalid-icon" src="./images/invalid.svg" alt="" />
+              <input
+                type="password"
+                name="password2"
+                id="pwd2"
+                required
+                placeholder="Confirm password"
+              />
+              <span class="errorMsg"></span>
             </div>
             <div><button id="join">Join</button></div>
             <p class="login">
