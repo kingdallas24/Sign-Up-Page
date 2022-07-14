@@ -32,12 +32,11 @@ html {
 }
 
 .left-side {
-  overflow: hidden;
   height: auto;
 
   background: url(./images/screen-post-rVcxGBT80j8-unsplash.jpg);
 
-  background-size: cover;
+  background-size: contain;
   background-repeat: repeat;
   background-attachment: fixed;
   position: relative;
