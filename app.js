@@ -73,7 +73,7 @@ function validateLastName() {
 }
 
 function validateUsername() {
-  const usernameRegex = /^[\w]{5,15}$/;
+  const usernameRegex = /^[\w]{5,15}([ ])?$/;
 
   usernameResult = usernameRegex.test(username.value);
 
@@ -152,6 +152,7 @@ function validatePassword2() {
   if (password2.value !== password.value || password.value === "") {
     password2.setCustomValidity("Invalid");
     errorMsg[5].textContent = "Passwords do not match.";
+    errorMsg[5].style.color = "red";
     invalidIcon[5].style.opacity = "1";
     validIcon[5].style.opacity = "0";
     password2.classList.add("invalid");
@@ -163,6 +164,7 @@ function validatePassword2() {
     password2.setCustomValidity("");
     errorMsg[5].textContent = "Match Success.";
     errorMsg[5].style.color = "green";
+
     validIcon[5].style.opacity = "1";
     invalidIcon[5].style.opacity = "0";
     password2.classList.add("valid");
